@@ -1,6 +1,7 @@
-package org.lbg;
+package org.lbg.bankAccApp;
 
 import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class BankAccountTest

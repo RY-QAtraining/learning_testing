@@ -1,4 +1,4 @@
-package org.lbg;
+package org.lbg.bankAccApp;
 
 import org.junit.jupiter.api.Test;
 

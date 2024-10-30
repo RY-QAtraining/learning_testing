@@ -1,4 +1,4 @@
-package org.lbg;
+package org.lbg.bankAccApp;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 

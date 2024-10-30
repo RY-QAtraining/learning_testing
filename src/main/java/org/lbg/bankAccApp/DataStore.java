@@ -1,4 +1,4 @@
-package org.lbg;
+package org.lbg.bankAccApp;
 public class DataStore implements IDataStore{
 
     // Simulate the idea of data being loaded from persistent storage

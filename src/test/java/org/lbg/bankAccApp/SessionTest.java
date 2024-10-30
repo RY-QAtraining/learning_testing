@@ -1,4 +1,4 @@
-package org.lbg;
+package org.lbg.bankAccApp;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
