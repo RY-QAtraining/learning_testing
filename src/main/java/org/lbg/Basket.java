@@ -7,8 +7,7 @@ import java.util.Collections;
 public class Basket
 {
     private ArrayList<Item> itsItems = new ArrayList<>();
-    public Basket(Basket other){
-        itsItems= new ArrayList<>(other.itsItems);
+    public Basket(Basket other){itsItems= new ArrayList<>(other.itsItems);
     }
     public Basket(){}
 
@@ -28,5 +27,9 @@ public class Basket
         return total;
     }
 
+    public Item getLastItem()
+    {
+        return itsItems.get(itsItems.size()-1);
+    }
 }
 
