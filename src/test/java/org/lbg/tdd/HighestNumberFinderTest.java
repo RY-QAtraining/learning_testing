@@ -2,7 +2,7 @@ package org.lbg.tdd;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class HighestNumberFinderTest {
     @Test
@@ -66,6 +66,23 @@ public class HighestNumberFinderTest {
         //assert
         assertEquals(expectedRes,actualRes);
     }
+
+    @Test
+    public void handle_exception_for_empty_arr(){
+        //arrange
+        int input[] = {};
+        HighestNumberFinder cut = new HighestNumberFinder();
+        String expectedMsg = "Array is empty";
+
+        //action
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> {cut.findHighestNumber(input);});
+        String actualMsg = exception.getMessage();
+
+        //assert
+        assertEquals(expectedMsg,actualMsg);
+
+    }
+
 
 
 }

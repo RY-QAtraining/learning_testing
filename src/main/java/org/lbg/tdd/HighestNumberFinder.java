@@ -5,6 +5,8 @@ import java.lang.reflect.Array;
 public class HighestNumberFinder {
 
     public int findHighestNumber(int[] input) {
+        if (input.length == 0)
+            throw new IllegalArgumentException("Array is empty");
         int highestSoFar = input[0];
         for(int num: input) {
             if (num > highestSoFar)
