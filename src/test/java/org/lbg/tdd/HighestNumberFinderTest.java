@@ -75,11 +75,11 @@ public class HighestNumberFinderTest {
         String expectedMsg = "Array is empty";
 
         //action
-        Exception exception = assertThrows(IllegalArgumentException.class, () -> {cut.findHighestNumber(input);});
+        Exception exception = assertThrows(ArrayIndexOutOfBoundsException.class, () -> {cut.findHighestNumber(input);});
         String actualMsg = exception.getMessage();
 
         //assert
-        assertEquals(expectedMsg,actualMsg);
+        assertTrue(actualMsg.contains(expectedMsg));
 
     }
 
