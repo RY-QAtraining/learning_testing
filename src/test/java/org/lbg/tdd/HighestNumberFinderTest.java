@@ -43,5 +43,17 @@ public class HighestNumberFinderTest {
         assertEquals(expectedRes,actualRes);
     }
 
+    @Test
+    public void find_highest_in_array_of_multiple_equals(){
+        //arrange
+        int input[] = {4,6,13,13};
+        HighestNumberFinder cut = new HighestNumberFinder();
+        int expectedRes = 13;
+        //action
+        int actualRes = cut.findHighestNumber(input);
+        //assert
+        assertEquals(expectedRes,actualRes);
+    }
+
 
 }
