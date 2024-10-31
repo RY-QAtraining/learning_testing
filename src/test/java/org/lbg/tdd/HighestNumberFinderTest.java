@@ -55,5 +55,17 @@ public class HighestNumberFinderTest {
         assertEquals(expectedRes,actualRes);
     }
 
+    @Test
+    public void find_highest_in_array_of_multiple_with_negNo(){
+        //arrange
+        int input[] = {4,5,-8,3,11,-21,6};
+        HighestNumberFinder cut = new HighestNumberFinder();
+        int expectedRes = 11;
+        //action
+        int actualRes = cut.findHighestNumber(input);
+        //assert
+        assertEquals(expectedRes,actualRes);
+    }
+
 
 }
