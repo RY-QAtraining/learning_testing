@@ -11,10 +11,5 @@ public class HighestNumberFinder {
             highestSoFar = input[1];
         return highestSoFar;
 
-        /*
-        if (input.length ==1)
-            return input[0];
-
-        return input[0]>input[1]? input[0]: input[1];*/
     }
 }
